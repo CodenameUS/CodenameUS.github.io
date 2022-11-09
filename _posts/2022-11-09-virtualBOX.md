@@ -1,8 +1,8 @@
 ---
 layer: single
 title: "VirtualBox 설치법"
-categories: NetworkSecurity
-tag: [NetworkSecurity]
+categories: 네트워크보안
+tag: [네트워크보안, Network, VirtualBox]
 toc: true
 author_profile: false
 sidebar: 
