@@ -27,7 +27,7 @@ VirtualBox는 무료이므로 누구나 설치 가능합니다.
 
 ### 다운로드 홈페이지
 
-.[공식 홈페이지].(https://www.virtualbox.org/wiki/Downloads) 에서 본인 컴퓨터의 OS에 맞게 다운로드 하면 됩니다.
+[공식 홈페이지](https://www.virtualbox.org/wiki/Downloads) 에서 본인 컴퓨터의 OS에 맞게 다운로드 하면 됩니다.
 
 제 컴퓨터는 윈도우를 사용하므로 Windows hosts를 다운로드 받았습니다.
 
