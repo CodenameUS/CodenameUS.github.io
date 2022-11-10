@@ -31,19 +31,19 @@ VirtualBox는 무료이므로 누구나 설치 가능합니다.
 
 제 컴퓨터는 윈도우를 사용하므로 Windows hosts를 다운로드 받았습니다.
 
-![image01](/images/2022-11-09-image01.png)
+![image01](/images/2022-11-09-virtualBOX01.png)
 &nbsp;
 &nbsp;
 
 다운받은 설치파일을 실행해서 쭉쭉 진행해줍니다.
 
-![image02](/images/2022-11-09-image02.png)
+![image02](/images/2022-11-09-virtualBOX02.png)
 
 
 
 기본설정으로 계속 Next 해줍니다.
 
-![image03](/images/2022-11-09-image03.png)
+![image03](/images/2022-11-09-virtualBOX03.png)
 
 
 
@@ -51,7 +51,7 @@ VirtualBox는 무료이므로 누구나 설치 가능합니다.
 
 
 
-![image04](/images/2022-11-09-image04.png)
+![image04](/images/2022-11-09-virtualBOX04.png)
 
 
 
