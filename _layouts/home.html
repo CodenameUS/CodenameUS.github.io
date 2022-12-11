@@ -5,6 +5,8 @@ layout: archive
 {{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<!-- hits 방문자 수 -->
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcodenameus.github.io&count_bg=%23F4DFDF&title_bg=%23F4DFDF&icon=staffbase.svg&icon_color=%23262323&title=%EB%B0%A9%EB%AC%B8%EC%9E%90%EC%88%98&edge_flat=false"/></a>  </div>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
