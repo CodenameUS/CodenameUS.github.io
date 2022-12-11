@@ -11,7 +11,8 @@ layout: archive
 {% else %}
   {% assign posts = site.posts %}
 {% endif %}
-
+<!-- hits 방문자 수 -->
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcodenameus.github.io&count_bg=%23F4DFDF&title_bg=%23F4DFDF&icon=staffbase.svg&icon_color=%23262323&title=%EB%B0%A9%EB%AC%B8%EC%9E%90%EC%88%98&edge_flat=false"/></a>  </div>
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
