@@ -171,4 +171,6 @@ GameManager 라는 이름의 오브젝트를 만들고, GameManager.cs를 붙여
 
 
 
-![video](/videos/3D%20Infinity%20zigzag%20-%20InfiniteZigzag%20-%20Windows%2C%20Mac%2C%20Linux%20-%20Unity%202021.3.15f1%20Personal_%20_DX11_%202023-03-25%2021-57-42.mp4)
+아래 영상과 같이 움직인다면 잘 된것입니다.
+
+<iframe width="1217" height="685" src="https://www.youtube.com/embed/Q4u4LTxNKag" title="InfiniteZigzag1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
