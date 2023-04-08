@@ -136,5 +136,9 @@ public class CameraController : MonoBehaviour
 
 Main Camera의 CameraController 스크립트 빈칸에 Target->Player, SmoothValu->5를 넣어줍니다.
 
+
+
 ![image](/images/2023-04-08/capture_2.png)
+
+
 카메라 시점이 자동차를 따라서 움직이는 것을 확인할 수 있습니다.
