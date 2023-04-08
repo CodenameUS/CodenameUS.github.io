@@ -1,6 +1,6 @@
 ---
 layer: single
-title: "[Unity] 간단한 3D 게임 만들기[2]"
+title: "[Unity] 간단한 3D 게임 만들기[3]"
 categories: Unity
 tag: [C#, Unity, Game, Project]
 toc: true
