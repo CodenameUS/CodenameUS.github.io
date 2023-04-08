@@ -120,7 +120,6 @@ Platform 이라는 스크립트를 하나 생성합니다.
 Prefabs 폴더의 PlatformPre 프리팹을 선택하고 Platform스크립트를 연결합니다.
 
 
-<Platform 스크립트>
 
 ```c++
 using System.Collections;
