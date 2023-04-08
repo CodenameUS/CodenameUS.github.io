@@ -165,3 +165,9 @@ public class Platform : MonoBehaviour
 Player 오브젝트를 선택하고 Tag를 Player로 바꿔줍니다.
 
 ![image](/images/2023-04-08/capture_7.png)
+
+
+게임을 실행해서 플레이어가 지나간 뒤 블럭이 떨어지는지,
+
+그리고 플레이어가 떨어졌을 때 카메라가 멈추는지를 확인합니다.
+
