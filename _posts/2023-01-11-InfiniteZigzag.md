@@ -110,3 +110,4 @@ Player에 Rigidbody를 추가하고 BoxCollider를 추가해줍니다.
 
 ![image](/images/2023-01-11/capture10.png)
 
+
