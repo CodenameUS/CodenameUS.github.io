@@ -25,12 +25,12 @@ sidebar:
 - 참고 : https://www.goldmetal.co.kr/
 
 
-![image](/images/2023-08-10/capture_1.png)
+![image](/images/2023-08-17/capture_1.png)
 
 
 - 다운로드 받은 파일을 압축해제한 뒤 유니티에 드래그 드랍해서 임포트 해줍니다.
 
-![image](/images/2023-08-10/capture_2.png)
+![image](/images/2023-08-17/capture_2.png)
 
 - 이 애셋들은 개인 학습용, 과제, 상용 프로젝트에도 자유롭게 사용이 가능하다고 하니 참고하시면 됩니다.
 
@@ -40,25 +40,25 @@ sidebar:
 
 - 임포트된 패키지파일을 살펴보면 다음과 같은 파일들이 있습니다.
 
-![image](/images/2023-08-10/capture_3.png)
+![image](/images/2023-08-17/capture_3.png)
 
 
 - 그 중에서 Sprite 폴더에 보면 여러 아틀라스들이 있는것을 확인할 수 있습니다. 이 아틀라스들을 잘라서 사용하겠습니다.
 
 - 아틀라스를 자르기 위해서, Sprite Mode를 Multiple로 지정하고, Sprite Editor를 눌러줍니다.
 
-![image](/images/2023-08-10/capture_4.png)
+![image](/images/2023-08-17/capture_4.png)
 
 
 - Slice를 눌러, Grid by Cell Size를 선택하고 Pixel Size는 X : 18 Y : 20으로, Padding은 1, 1로 설정해줍니다.
 
 
-![image](/images/2023-08-10/capture_5.png)
+![image](/images/2023-08-17/capture_5.png)
 
 
 - 이제 잘라진 스프라이트를 Scene에 추가해 보겠습니다.
 
-![image](/images/2023-08-10/capture_6.png)
+![image](/images/2023-08-17/capture_6.png)
 
 
 ## 컴포넌트 추가
@@ -74,7 +74,7 @@ sidebar:
 - Size가 플레이어와 맞지 않으면 적절하게 설정합니다.
 
 
-![image](/images/2023-08-10/capture_7.png)
+![image](/images/2023-08-17/capture_7.png)
 
 
 ## 플레이어 그림자 추가
@@ -84,7 +84,7 @@ sidebar:
 - Player 레이어의 Order를 1로 설정함으로써 Shadow가 플레이어보다 뒷쪽에 보이도록 할 수 있습니다.
 
 
-![image](/images/2023-08-10/capture_8.png)
+![image](/images/2023-08-17/capture_8.png)
 
 
 ## 배경색 설정
@@ -93,4 +93,4 @@ sidebar:
 
 - RGB 값을 255 255 255로 설정하여 새하얀 배경색으로 설정해보았습니다.
 
-![image](/images/2023-08-10/capture_9.png)
+![image](/images/2023-08-17/capture_9.png)
