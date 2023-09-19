@@ -109,7 +109,7 @@ public class PoolManager : MonoBehaviour
 
 - 이 스크립트를 PoolManager에 붙여넣고, Prefabs 폴더에 있는 프리팹들을 연결시켜줍니다.
 
-![image](/images/2023-08-28/capture_2.png)
+![image](/images/2023-09-18/capture_2.png)
 
 
 ### Spawner.cs
