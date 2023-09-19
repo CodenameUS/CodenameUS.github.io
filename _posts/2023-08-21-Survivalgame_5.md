@@ -29,7 +29,7 @@ void LateUpdate()
     {
         if (inputVec.x != 0)
         {
-            //플레이어가 보는 방향 변경
+            // ... 플레이어가 보는 방향 변경
             sprite.flipX = inputVec.x < 0;
         }
     }
@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     Animator anim;
 
-    //시작 시 한번만 실행되는 함수 Awake
+    // ... 시작 시 한번만 실행되는 함수 Awake
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -114,15 +114,15 @@ public class Player : MonoBehaviour
     }
 
 
-    //물리 연산 프레임마다 호출되는 함수 FixedUpdate
+    // ... 물리 연산 프레임마다 호출되는 함수 FixedUpdate
     private void FixedUpdate()
     {
         Vector2 nextVec = inputVec * speed * Time.fixedDeltaTime;    
-        //플레이어의 위치 이동
+        // ... 플레이어의 위치(좌표) 이동
         rigid.MovePosition(rigid.position + nextVec);
     }
 
-    //인풋 받기
+    // ... 인풋 받기
     void OnMove(InputValue value)
     {
         inputVec = value.Get<Vector2>();        
@@ -135,7 +135,7 @@ public class Player : MonoBehaviour
 
         if (inputVec.x != 0)
         {
-            //플레이어가 보는 방향 변경
+            // ... 플레이어가 보는 방향 변경
             sprite.flipX = inputVec.x < 0;
         }
     }
