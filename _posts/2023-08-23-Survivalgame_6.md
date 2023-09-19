@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
 {
 
     public Player player;
+    // ... 매니저 인스턴스를 어디서든 접근 가능하게 함
     public static GameManager instance;
 
 
@@ -104,29 +105,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// ... 재배치 스크립트(타일맵, 몬스터)
 public class Reposition : MonoBehaviour
 {
     private void OnTriggerExit2D(Collider2D collision)
     {
+        // ... 플레이어(Area)가 아니면 무시
         if (!collision.CompareTag("Area"))
             return;
 
-        Vector3 playerPos = GameManager.instance.player.transform.position; //플레이어 위치
+        // ... 플레이어의 위치를 가져옴
+        Vector3 playerPos = GameManager.instance.player.transform.position; 
+        // ... 현재 타입맵의 위치를 가져옴
         Vector3 myPos = transform.position;
 
+        // ... 플레이어와 타일맵 위치차이 계산
         float diffX = Mathf.Abs(playerPos.x - myPos.x);
         float diffY = Mathf.Abs(playerPos.y - myPos.y);
 
+        // ... 플레이어 방향
         Vector3 playerDir = GameManager.instance.player.inputVec;
+        // ... 플레이어 방향에따라 타일맵 방향 설정
         float dirX = playerDir.x < 0 ? -1 : 1;
         float dirY = playerDir.y < 0 ? -1 : 1;
 
+        // ... 타일맵/몬스터 위치 변경
         switch (transform.tag)
         {
             case "Ground":
+                // ... 타일맵 위치를 플레이어가 가고 있는 방향 쪽으로 변경
                 if(diffX > diffY)
                 {
-                    transform.Translate(Vector3.right * dirX * 40);     //플레이어 가고있는 방향으로 배치
+                    transform.Translate(Vector3.right * dirX * 40);     
                 }
                 else if (diffX < diffY)
                 {
