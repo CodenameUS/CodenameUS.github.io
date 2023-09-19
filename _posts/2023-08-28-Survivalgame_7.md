@@ -52,10 +52,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed;         //몬스터 속도
-    public Rigidbody2D target;  //타겟
+    public float speed;         // ... 몬스터 속도
+    public Rigidbody2D target;  // ... 타겟(플레이어)
 
-    bool isLive = true;                //생존여부
+    bool isLive = true;                // ... 몬스터 생존여부
 
     Rigidbody2D rigid;
     SpriteRenderer sprite;
@@ -66,14 +66,14 @@ public class Enemy : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
     }
 
-
     void FixedUpdate()
     {
-
         if (!isLive)
             return;
        
-        Vector2 dirVec = target.position - rigid.position;  //몬스터와 플레이어의 위치차이(방향)
+        // ... 플레이어와 몬스터 위치 차이
+        Vector2 dirVec = target.position - rigid.position;  
+        // ... 몬스터 다음 움직일 방향 설정
         Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVec);
         rigid.velocity = Vector2.zero;
@@ -83,11 +83,11 @@ public class Enemy : MonoBehaviour
     {
         if (!isLive)
             return;
-        sprite.flipX = target.position.x < rigid.position.x;    //몬스터가 바라보는 방향설정
+        // ... 몬스터가 바라보는 방향설정(애니메이션)
+        sprite.flipX = target.position.x < rigid.position.x;    
     }
-
-
 }
+
 
 ```
 
@@ -104,6 +104,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// ... 재배치 스크립트(타일맵, 몬스터)
 public class Reposition : MonoBehaviour
 {
     Collider2D coll;
@@ -115,25 +116,33 @@ public class Reposition : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        // ... 플레이어(Area)가 아니면 무시
         if (!collision.CompareTag("Area"))
             return;
 
-        Vector3 playerPos = GameManager.instance.player.transform.position; //플레이어 위치
+        // ... 플레이어의 위치를 가져옴
+        Vector3 playerPos = GameManager.instance.player.transform.position; 
+        // ... 현재 타입맵의 위치를 가져옴
         Vector3 myPos = transform.position;
 
+        // ... 플레이어와 타일맵 위치차이 계산
         float diffX = Mathf.Abs(playerPos.x - myPos.x);
         float diffY = Mathf.Abs(playerPos.y - myPos.y);
 
+        // ... 플레이어 방향
         Vector3 playerDir = GameManager.instance.player.inputVec;
+        // ... 플레이어 방향에따라 타일맵 방향 설정
         float dirX = playerDir.x < 0 ? -1 : 1;
         float dirY = playerDir.y < 0 ? -1 : 1;
 
+        // ... 타일맵/몬스터 위치 변경
         switch (transform.tag)
         {
             case "Ground":
-                if(diffX > diffY)
+                // ... 타일맵 위치를 플레이어가 가고 있는 방향 쪽으로 변경
+                if (diffX > diffY)
                 {
-                    transform.Translate(Vector3.right * dirX * 40);     //플레이어 가고있는 방향으로 배치
+                    transform.Translate(Vector3.right * dirX * 40);     
                 }
                 else if (diffX < diffY)
                 {
@@ -141,13 +150,12 @@ public class Reposition : MonoBehaviour
                 }
                 break;
             case "Enemy":
-                if (coll.enabled)   //몬스터가 살아있을 경우
+                if (coll.enabled)   // ... 몬스터가 살아있을 경우
                 {
-                    //플레이어의 맞은편에서 나타나게하기
+                    // ... 플레이어의 맞은편에서 나타나게하기
                     transform.Translate(playerDir * 20 + new Vector3(Random.Range(-3f, 3f), Random.Range(-3f, 3f),0f));      
                 }
                 break;
-          
         }
     }
 }
