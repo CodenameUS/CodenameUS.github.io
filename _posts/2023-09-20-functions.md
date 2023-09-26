@@ -15,7 +15,7 @@ sidebar:
 유니티로 게임을 만들다보니 여러가지 함수들을 사용하게되었는데 미리 한번 정리해두는것이 좋을것같아 찾아보았습니다.
 
 
-* Awake
+**Awake**
 
 - Awake 함수는 스크립트 실행 시 한 번만 호출되는 함수로, 주로 게임의 상태 값 또는 변수 초기화에 사용한다.
 
@@ -26,7 +26,7 @@ sidebar:
 - 코루틴으로 실행 불가하다.
 
 
-* Start
+**Start**
 
 - Update 함수가 호출되기 전에 한 번 호출된다.
 
@@ -37,21 +37,21 @@ sidebar:
 - 코루틴으로 실행 가능하다.
 
 
-* Update
+**Update**
 
 - 매 프레임마다 호출되는 함수로 주로 게임의 핵심 로직을 작성한다.
 
 - 스크립트가 활성화 되어있어야 실행된다.
 
 
-* LateUpdate
+**LateUpdate**
 
 - 모든 Update 함수가 호출되고 나서 한 번씩 호출되며 Update함수에서 전처리가 끝난 뒤 실행해야하는 로직에 사용하는 함수다.
 
 - 마찬가지로 스크립트가 활성화 되어 있어야 실행된다.
 
 
-* FixedUpdate
+**FixedUpdate**
 
 - 물리엔진 시뮬레이션 계산주기로 기본값은 0.02초다.
 
@@ -60,7 +60,7 @@ sidebar:
 - 발생주기가 일정하다.
 
 
-* OnEnable
+**OnEnable**
 
 - 게임오브젝트 또는 스크립트가 활성화 되었을 때 호출
 
@@ -68,7 +68,7 @@ sidebar:
 
 - 코루틴 사용 불가하다.
 
-* OnDisable
+**OnDisable**
 
 - 게임오브젝트 또는 스크립트가 활성화 되었을 때 호출
 
@@ -90,33 +90,33 @@ sidebar:
 
 ### 변수 및 프로퍼티
 
-* gameObject : 자기 자신이 붙은 오브젝트로, 
+**gameObject** : 자기 자신이 붙은 오브젝트로, 
 ```c#
     GameObject gameObject = new GameObject() 가 가려져있다고 생각하면된다.
 ```
 
-* name : 해당 호브젝트의 이름
+**name** : 해당 호브젝트의 이름
 
 ### 내장함수
 
-* GetComponent()
+**GetComponent()**
 
 - 이 스크립트가 붙어 있는 오브젝트에 <> 안에 적혀있는 컴포넌트가 실존하여 오브젝트에 붙어있는 상태라면 붙어있는 컴포넌트를 리턴해준다.
 
 - 컴포넌트와 오브젝트를 연결해줌.
 
 
-* GetComponentInChildren()
+**GetComponentInChildren()**
 
 - 내 자식 오브젝트들 중에서 <>안에 적혀 있는 컴포넌트가 실존하여 오브젝트에 붙어 있는 상태라면 그 붙어 있는 컴포넌트를 리턴해준다.
 
 
-* GetComponentsInChildren()
+**GetComponentsInChildren()**
 
 - 내 자식 오브젝트들 중에서 <>안에 적혀 있는 컴포넌트가 실존하여 오브젝트에 붙어 있는 상태라면 그 붙어 있는 컴포넌트들을 모두 모아 배열로 리턴해준다.
 
 
-* Destroy(Object)
+**Destroy(Object)**
 
 - 매개변수로 받은 오브젝트를 파괴한다.
 
@@ -129,7 +129,7 @@ sidebar:
 - 변수가 참조하고 있는 오브젝트를 활성/비활성화 시켜주는 함수.
 
 
-* Instantiate(GameObject)
+**Instantiate(GameObject)**
 
 - 게임 플레이 도중에 매개변수에 들어온 오브젝트를 복사하여 생성.
 
