@@ -18,7 +18,7 @@ sidebar:
 - Canvas - Create Empty(Game Start) - Image(Title), Button(Button Start)을 추가합니다.
 - Image, Button Sprite는 Sprites 폴더에 따로 있으니 추가해줍니다.
 
-![image](/images/2024-02-04/capture_1.png)
+![image](/images/2024/2024-02-04/capture_1.png)
 
 
 - Title과 Button의 위치와 속성등을 적절히 배치합니다.
@@ -27,7 +27,7 @@ sidebar:
 - 그다음 게임시작을 누르기 전에는 게임 내 UI들(LevelUp Bar, Hp, Time, Kills... 등등)이 보이지 않았으면하므로, Canvas - Create Empty 하여 HUD라는 오브젝트를 만든 후, Exp, Level, Kill, Timer, Hp 오브젝트를 HUD의 자식으로 넣어줍니다.
 - 이번에는 Button Start의 OnClick에 HUD를 추가하고, SetActive를 추가합니다. 그리고 HUD는 비활성화 해줍니다.
 
-![image](/images/2024-02-04/capture_2.png)
+![image](/images/2024/2024-02-04/capture_2.png)
 
 
 - 게임 실행을 해보면, 게임 시작 버튼을 눌러도 게임의 시간이 흐르지않는것을 볼 수 있습니다.
@@ -217,7 +217,7 @@ public class GameManager : MonoBehaviour
 - 생존하여 게임에서 승리했을 때, 남아있는 몬스터들을 모두 제거하는 연출을 위해 Bullet을 하나 만들어보겠습니다.
 - Hierarchy뷰에서 Create Empty - enemyCleaner를 만들어줍니다.
 
-![image](/images/2024-02-04/capture_3.png)
+![image](/images/2024/2024-02-04/capture_3.png)
 
 
 - 게임승리 UI를 만들기 위해 GameResult 오브젝트의 Title를 Title Over로 이름을 변경하고, 복사하여 Title Victory의 오브젝트를 만들어줍니다.
