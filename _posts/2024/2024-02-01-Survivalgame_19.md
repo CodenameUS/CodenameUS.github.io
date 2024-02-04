@@ -77,7 +77,7 @@ public void GetExp()
 - 반대로 Hide() 함수는 스크립트에서 부르는것이 아니라, 유니티 Item 0~4 오브젝트에서 호출합니다.
 - 먼저 GameManager 오브젝트 변수에 LevelUp을 붙여준 뒤, Item 0~4 오브젝트를 선택하고 인스펙터창의 Button에서 OnClick 이벤트에 +버튼을 눌러 LevelUp 스크립트를 넣어줍니다. 그런다음 Hide() 함수를 선택해주면 됩니다.
 
-![image](/images/2024-02-01/capture_1.png)
+![image](/images/2024/2024-02-01/capture_1.png)
 
 
 ## 기본 무기 지급
@@ -139,7 +139,7 @@ void Start()
 - 임시로 삽을 선택하도록 했습니다.
 - 게임을 실행해보면 레벨업을 해서 능력치 업그레이드 UI가 나왔는데, 능력치 고를 시간도없이 계속해서 게임이 실행되고 있는 문제가 발생합니다. 
 
-![image](/images/2024-02-01/capture_2.gif)
+![image](/images/2024/2024-02-01/capture_2.gif)
 
 ## 시간 컨트롤
 
@@ -362,4 +362,4 @@ case InfoType.Exp:
 - HUD 슬라이더에도 반영해줍니다.
 
 
-![image](/images/2024-02-01/capture_3.gif)
+![image](/images/2024/2024-02-01/capture_3.gif)
