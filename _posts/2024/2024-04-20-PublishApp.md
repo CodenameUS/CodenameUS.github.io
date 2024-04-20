@@ -74,7 +74,7 @@ sidebar:
 
 - java -jar /내경로/pepk.jar --keystore=내keystore명.keystore --alias=내alias --output=출력파일이름(아무거나).zip --include-cert --rsa-aes-encryption --encryption-key-path=/내경로/encryption_public_key.pem 과 같이 바꿔줍니다.
 
-[앱 번들 등록하기](https://j2su0218.tistory.com/1321)
+[참고링크-앱 번들 등록하기](https://j2su0218.tistory.com/1321)
 
 - 명령어창(cmd)을 열어 명령어를 넣어줍니다.
 - 성공적으로 완료되었다면 새로운 압축파일이 생겨나고, 이것을 업로드해주면됩니다.
