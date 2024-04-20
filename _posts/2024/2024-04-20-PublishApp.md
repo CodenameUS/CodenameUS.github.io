@@ -1,6 +1,6 @@
 ---
 layer: single
-title: "안드로이드 모바일 앱 출시하기"
+title: "안드로이드 모바일 앱 출시하기[1/2]"
 categories: Unity
 tag: [C#, Unity, Game, Project]
 toc: true
