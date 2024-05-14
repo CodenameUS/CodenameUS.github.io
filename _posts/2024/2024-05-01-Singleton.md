@@ -105,7 +105,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         get
         {
-            // .. instance가 존재하는 경우
+            // .. instance가 존재하지 않는 경우
             if(instance == null)
             {
                 // .. 어딘가 존재할수도 있는 인스턴스 찾기
@@ -118,7 +118,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
                     instance = obj.GetComponent<T>();
                 }
             }
-            // .. 존재하지않는 경우
+            // .. 존재하는경우
             return instance;
         }
     }
