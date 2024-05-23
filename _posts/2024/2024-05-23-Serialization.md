@@ -72,3 +72,6 @@ public class Spawner : MonoBehaviour
 ```
 
 - 실제로 직렬화된 데이터를 파일로 저장하는 방법은 다음 글에서 정리해보겠다.
+
+
+[참조 유튜브(레트로 retro0 님)링크](https://www.youtube.com/watch?v=qrQZOPZmt0w&t=0s)
