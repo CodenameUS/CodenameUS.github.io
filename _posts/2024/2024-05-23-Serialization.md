@@ -12,7 +12,7 @@ sidebar:
 
 
 
-# 직렬화[Serialization]란?
+# 직렬화[Serialization]란
 
 - Serial의 뜻은 연속적인, 연쇄적인 어떤 것이다.
 - 유니티에서 Serialization는 "오브젝트를 연속된 문장형 데이터나 연속된 Byte 데이터로 바꾸는것을 말한다.
