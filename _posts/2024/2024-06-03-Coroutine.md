@@ -1,6 +1,6 @@
 ---
 layer: single
-title: "유니티 코루틴(Coroutine)과 IEnumerator"
+title: "유니티에서 코루틴[Coroutine]과 IEnumerator"
 categories: Unity
 tag: [C#, Unity]
 toc: true
@@ -8,6 +8,7 @@ author_profile: false
 sidebar: 
     nav: "docs"
 ---
+
 
 ![image](/images/2024/2024-06-03/capture_1.PNG)
 
