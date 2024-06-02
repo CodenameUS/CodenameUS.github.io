@@ -9,6 +9,7 @@ sidebar:
     nav: "docs"
 ---
 
+![image](/images/2024/2024-06-03/capture_1.PNG)
 
 # 코루틴(Coroutine)
 
@@ -80,3 +81,5 @@ public void Use()
 편한 방법대로 쓰면 된다.
 - 반대로 중지하기 위해서는 StopCoroutine() 메서드를 호출하면 된다.
 - 만약 모든 실행중인 코루틴을 중단하고 싶다면 StopAllCoroutines() 메서드를 호출하면 된다.
+
+
