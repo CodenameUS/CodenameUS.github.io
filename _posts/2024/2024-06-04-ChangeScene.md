@@ -128,6 +128,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// 씬 전환 함수 LoadNextScene(매개변수:불러오고자 하는 씬 - nextScene에 저장) 호출
+/// -> 다음 씬으로 넘어가기전 Loading 씬 로드
+/// -> LoadSceneProcess 함수(로딩 게이지) 및 ShowRandomTips 함수(게임팁 텍스트) 실행
+/// -> 씬(nextScene) 로드가 완료되고, 로딩게이지바가 100%가 되면 nextScene으로 전환
+/// </summary>
+/// 
 public class LoadingSceneController : MonoBehaviour
 {
     static string nextScene;
@@ -142,7 +149,7 @@ public class LoadingSceneController : MonoBehaviour
     [SerializeField] Text   tipText; 
 
 
-    // 다음 씬 불러오기
+    // 로딩씬 불러오기 및 불러오고자하는 씬이름 저장
     public static void LoadNextScene(string sceneName)
     {
         nextScene = sceneName;
@@ -155,8 +162,10 @@ public class LoadingSceneController : MonoBehaviour
         ShowRandomTips();
     }
 
+    // 로딩바 채우기
     IEnumerator LoadSceneProcess()
     {
+        // .. LoadSceneAsync : 씬 로드중 다른작업 가능
         AsyncOperation op = SceneManager.LoadSceneAsync(nextScene);
         op.allowSceneActivation = false;
 
@@ -166,13 +175,14 @@ public class LoadingSceneController : MonoBehaviour
         {
             yield return null;
 
+            // .. 로딩바 이미지 Width 조절로 로딩구현(Min:0f - Max:1920f)
             if(op.progress < 0.9f)
             {
                 progressBar.rectTransform.sizeDelta = new Vector2(op.progress * 1920f, 80f);
             }
             else
             {
-                // 씬 로딩이 90% 완료되면 완료대기시키고 Fake 로딩주기
+                // 씬 로딩이 90%(Width 1728f) 완료되면 완료대기시키고 Fake 로딩주기
                 timer += Time.unscaledDeltaTime;
                 progressBar.rectTransform.sizeDelta = new Vector2(1728f + timer * 20f, 80f);
                 if(progressBar.rectTransform.sizeDelta.x >= 1920f)
