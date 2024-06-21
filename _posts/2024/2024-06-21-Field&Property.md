@@ -44,7 +44,7 @@ public class MyClass
 
 
 ```c#
-// 전동적인 프로퍼티
+// 전통적인 프로퍼티
 public class MyClass
 {
     private int myProperty;
