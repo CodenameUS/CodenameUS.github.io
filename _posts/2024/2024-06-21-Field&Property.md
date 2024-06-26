@@ -42,6 +42,7 @@ public class MyClass
 }
 ```
 
+- 만약 set 접근자에 private 접근 제한자를 붙이게된다면 읽기전용 프로퍼티가 된다.
 
 ```c#
 // 전통적인 프로퍼티
