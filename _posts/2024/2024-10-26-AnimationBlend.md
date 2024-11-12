@@ -24,7 +24,7 @@ sidebar:
 또 캐릭터가 달리다가 꺾을 때 좌우로 몸을 기울이는 등의 경우가 있습니다.
 &nbsp;
 
-![image](/images/2024/2024-10-29/capture_1.PNG) 
+![image](/images/2024/2024-10-26/capture_1.PNG) 
 
 &nbsp;
 트랜지션(Transition)과 블렌드 트리는 모두 자연스러운 애니메이션을 만들기위해 사용되지만 다음과 같은 차이점이 있습니다. 
@@ -36,7 +36,7 @@ sidebar:
 
 블렌드 트리를 만드는 방법은 간단합니다. 
 
-![image](/images/2024/2024-10-29/capture_2.PNG) 
+![image](/images/2024/2024-10-26/capture_2.PNG) 
 
 - 애니메이터창에서 마우스 우클릭을 하여 Create State - From New Blend Tree 를 선택하면됩니다.  
 
@@ -44,7 +44,7 @@ sidebar:
 
 - 블렌드 트리를 더블클릭하여 트리를 구성할 수 있습니다.
 
-![image](/images/2024/2024-10-29/capture_3.PNG) 
+![image](/images/2024/2024-10-26/capture_3.PNG) 
 
 &nbsp;
 블렌드 트리를 마우스 우클릭하면 Add Motion을 선택하여 필요한 모션을 추가할 수 있습니다. 또는 인스펙터창에서 + 기호를 눌러 추가할수도 있습니다.  
@@ -53,7 +53,7 @@ sidebar:
 저는 캐릭터가 가만히있는, 걷는, 뛰는 모션을 추가해보았습니다. 
 
 &nbsp;
-![image](/images/2024/2024-10-29/capture_4.PNG) 
+![image](/images/2024/2024-10-26/capture_4.PNG) 
 
 
 Threshold는 한계점이라는 말로, 위의 사진에서는 
@@ -68,7 +68,7 @@ Threshold를 위와같이 설정한 이유는 캐릭터가 조금이라도 움�
 &nbsp;
 아래는 블렌드된 애니메이션을 Speed를 키워가며 테스트해본 결과입니다.
 
-![image](/images/2024/2024-10-29/capture_5.gif) 
+![image](/images/2024/2024-10-26/capture_5.gif) 
 &nbsp;
 
 뭔가 어색한것이 느껴지시나요? 블렌드 트리를 만들 때 주의해야 할 점이 바로 모션간의 유사성입니다. 블렌드는 모션에서 모션으로 자연스럽게 이어주는것이므로 블렌드할 모션들이 비슷하지않다면 이상한 동작이 연출될 수 있습니다.  
