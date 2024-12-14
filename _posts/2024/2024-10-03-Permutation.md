@@ -107,20 +107,27 @@ int main() {
     cout << "총 경우의수 : " << cnt << "개";
 }
 ```
+<br>
 
+* 선택하고자하는 갯수 r에 도달하게된다면 끝이나게된다.
+    - depth는 현재 탐색하고있는 인덱스로, 
+* 중복을 허용하지 않으므로, check라는 중복방지 배열이 필요하다.
+    - check 배열을 통해 이미 고른 원소를 다시 고르지 않도록 한다.
+* 순서가 존재하므로, 반드신 원소배열의 첫번째부터 탐색한다.
+    - 즉 {A,B,C} 라는 원소가 존재할 때 (A,A) -> (A,B) -> (A,C) 탐색 이후 
+    - (B,A) -> (B,B) 순으로 탐색하게된다.
+    - 이때 check 배열을 통해 중복된 원소를 선택한 경우는 걸러지게된다.
 
+<br>
 
-다음으로 중복이 존재하는 순열을 구현해보았다.  
-
-중복검사를 제외한다면 위의 순열 코드와 동일하다.   
-
+다음으로 중복가능한 순열을 구현해보았다.<br>
 
 ```c
 #include <iostream>
 
 using namespace std;
 
-// { 1,2,3,4 } 에서 3가지를 선택하는 경우의 수 4P3
+// { 1,2,3,4 } 에서 3가지를 선택하는 경우의 수 
 #define n 4
 #define r 3
 
@@ -159,6 +166,11 @@ int main() {
 }
 ```
 
+<br>
+
+* 중복검사를 할 필요가없으므로, check 배열이 필요없다.
+<br>
+
 ## 조합 Combination
 
 <u>조합</u>이란 "순서"의 개념없이 "서로 다른 n개의 원소에서 r개를 선택한 후, 이를 나열하는 모든 경우의 수"로 말할 수 있다.   
@@ -180,7 +192,7 @@ int main() {
 
 ## 조합 구현
 
-먼저 순서가 없으며 중복을 허용하지 않는 조합이다.  
+먼저 중복을 허용하지 않는 조합이다.  
 
 마찬가지로 재귀호출을 사용하여 구현했으며, 반복문을 돌며 모든 경우에 대해 선택하는것은 같으나  
 
@@ -196,9 +208,9 @@ using namespace std;
 #define n 4
 #define r 3
 
-int cArr[r];
-int next;
-int cnt;                            // 총 경우의 수
+int cArr[r];                 // 선택된 원소들
+int cnt;                     // 총 경우의 수
+bool check[n + 1];
 
 // 선택된 각 경우의 수 출력
 void PrintArray(int arr[], size_t size)
@@ -213,24 +225,36 @@ void PrintArray(int arr[], size_t size)
 }
 
 // 재귀호출을 사용한 조합
-void Combination(int depth, int next) {
-    if (depth == r) {
+void Combination(int depth, int cnt) {
+    if (cnt == r) {
         PrintArray(cArr, r);
         return;
     }
 
-    for (int i = next; i <= n; i++) {
-        cArr[depth] = i;
-        Combination(depth + 1, i);
+    for (int i = depth; i <= n; i++) {
+        if (!check[i]) {
+            check[i] = true;
+            cArr[cnt] = i;
+            Combination(i + 1, cnt + 1);
+            check[i] = false;
+        }
+
     }
 }
 
 int main() {
-    cout << "조합 (순서o, 중복x)\n";
-    Combination(0, 1);
+    cout << "조합 (순서x, 중복x)\n";
+    Combination(1, 0);
     cout << "총 경우의수 : " << cnt << "개";
 }
 ```
+
+<br>
+
+* 조합은 순서가 존재하지 않으므로 현재 인덱스 이전의 원소는 신경쓰지않는다.
+    - 즉, (A,A) -> (A,B) -> (A,C) 이후 (B,A)를 탐색하는것이 아닌 (B,B) -> (B,C) 로 바로 넘어가게된다.
+* depth는 현재 탐색할 인덱스, cnt는 선택한 원소 갯수다.
+
 
 
 다음으로 중복을 허용하는 조합이다.  
@@ -240,13 +264,12 @@ int main() {
 
 using namespace std;
 
-// { 1,2,3,4 } 에서 3가지를 선택하는 경우의 수 4C3
+// { 1,2,3,4 } 에서 3가지를 선택하는 경우의 수 4H3
 #define n 4
 #define r 3
 
-int cArr[r];
-int next;
-int cnt;                            // 총 경우의 수
+int cArr[r];                 // 선택된 원소들
+int cnt;                     // 총 경우의 수
 
 // 선택된 각 경우의 수 출력
 void PrintArray(int arr[], size_t size)
@@ -255,31 +278,34 @@ void PrintArray(int arr[], size_t size)
     {
         cout << arr[i] << " ";
     }
-
     cnt++;
     cout << "\n";
 }
 
 // 재귀호출을 사용한 조합
-void DuplicateCombination(int depth, int next) {
-    if (depth == r) {
+void Combination(int depth, int cnt) {
+    if (cnt == r) {
         PrintArray(cArr, r);
         return;
     }
 
-    for (int i = next; i <= n; i++) {
-        cArr[depth] = i;
-        DuplicateCombination(depth + 1, i);
+    for (int i = depth; i <= n; i++) {
+        cArr[cnt] = i;
+        Combination(i, cnt + 1);
     }
 }
 
 int main() {
-    cout << "조합 (순서o, 중복o)\n";
-    DuplicateCombination(0, 1);
+    cout << "조합 (순서x, 중복o)\n";
+    Combination(1, 0);
     cout << "총 경우의수 : " << cnt << "개";
 }
 ```
+<br>
 
+* 마찬가지로 중복을 검사하는 부분이 빠졌다.
+
+<br>
 
 ## 순열 표준라이브러리 
 
