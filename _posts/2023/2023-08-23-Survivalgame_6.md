@@ -30,13 +30,13 @@ sidebar:
 
 - Size를 지정하면 아래쪽에 스프라이트를 추가할 수 있는데, 여기에 Sprites 폴더에 있는 Tiles를 넣어줍니다.
 
-![image](/images/2023-08-23/capture_1.png)
+![image](/images/2023/2023-08-23/capture_1.png)
 
 - 이 10개의 타일이 랜덤하게 선택되어 그려질 것입니다.
 
 - Hierarchy 뷰에서 2D Object - Tilemap - Ractangular를 선택하여 타일맵을 추가한 뒤, 타일 팔레트를 열어 20x20 크기의 맵을 그려줍니다.
 
-![image](/images/2023-08-23/capture_2.png)
+![image](/images/2023/2023-08-23/capture_2.png)
 
 
 ## 무한 맵 이동
@@ -49,20 +49,20 @@ sidebar:
 
 - 자동으로 추가된 Rigid Body 2D 컴포넌트의 바디타입은 Static으로 설정합니다.
 
-![image](/images/2023-08-23/capture_3.png)
+![image](/images/2023/2023-08-23/capture_3.png)
 
 
 
 - 그 다음, 태그 두가지를 추가해줍니다. 인스펙터 창의 Tag를 눌러 "Ground", "Area" 라는 이름의 태그를 두개추가합니다. 타일맵의 태그를 Ground로 설정해줍니다.
 
-![image](/images/2023-08-23/capture_4.png)
+![image](/images/2023/2023-08-23/capture_4.png)
 
 
 - Player 오브젝트를 선택하고, Create Empty를 선택하여 자식 오브젝트(Area)를 하나 만들어줍니다.
 
 - Box Collider 2D를 추가하고 그 크기를 20x20으로 설정한 뒤 is Trigger 체크합니다.
 
-![image](/images/2023-08-23/capture_5.png)
+![image](/images/2023/2023-08-23/capture_5.png)
 
 
 ### GameManager.cs [게임 매니저]
@@ -159,9 +159,9 @@ public class Reposition : MonoBehaviour
 - 그러기 위해서는 플레이어와 타일맵의 위치, 플레이어가 향하고있는 방향이 필요할 것이고, 이 정보들을 이용하여 다음 타일맵을 어느위치에 배치할 것인지 정할수 있습니다.
 
 
-![image](/images/2023-08-23/capture_6.png)
+![image](/images/2023/2023-08-23/capture_6.png)
 
 
 - 타일맵을 복사 붙여넣기 하여 4개의 타일맵을 플레이어 기준 4방향으로 나누어 깔아둡니다. 이제 게임을 시작하여 플레이어가 움직이는 방향쪽으로 타일맵이 재배치 되는지 확인합니다.
 
-![image](/images/2023-08-23/capture_7.gif)
+![image](/images/2023/2023-08-23/capture_7.gif)

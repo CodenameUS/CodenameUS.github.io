@@ -18,14 +18,14 @@ sidebar:
 
 Scripts 폴더안에 새로운 PlayerControl 라는 이름의 C# 스크립트를 만들어 Player 오브젝트에 붙여줍니다.
 
-![image](/images/2023-03-25/capture_1.png)
+![image](/images/2023/2023-03-25/capture_1.png)
 
 
 
 Player 오브젝트를 클릭해 스크립트가 적용되었는지 확인한 뒤 Is Kinematic 를 체크해줍니다.
 
 
-![image](/images/2023-03-25/capture_2.png)
+![image](/images/2023/2023-03-25/capture_2.png)
 
 
 
@@ -166,7 +166,7 @@ GameManager 라는 이름의 오브젝트를 만들고, GameManager.cs를 붙여
 
 그 다음, Player 오브젝트를 선택하고 moveSpeed를 8로 설정해줍니다.
 
-![image](/images/2023-03-25/capture_3.png)
+![image](/images/2023/2023-03-25/capture_3.png)
 
 
 

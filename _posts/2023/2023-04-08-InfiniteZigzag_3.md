@@ -27,7 +27,7 @@ PlayerControl 스크립트를 수정합니다.
 
 Update()함수에 다음을 추가합니다.
 
-![image](/images/2023-04-08/capture_3.png)
+![image](/images/2023/2023-04-08/capture_3.png)
 
 
 
@@ -95,13 +95,13 @@ public class GameManager : MonoBehaviour
 
 수정하였다면 GameManager 스크립트의 PlatformSpawner 부분에 PlatformSpawner 오브젝트를 연결합니다.
 
-![image](/images/2023-04-08/capture_4.png)
+![image](/images/2023/2023-04-08/capture_4.png)
 
 
 
 PlatformSpawner를 선택하고, inspector를 체크 해제합니다.
 
-![image](/images/2023-04-08/capture_5.png)
+![image](/images/2023/2023-04-08/capture_5.png)
 
 
 
@@ -110,7 +110,7 @@ Camera 스크립트를 조금 수정합니다.
 Update함수부분에 다음을 추가합니다.
 
 
-![image](/images/2023-04-08/capture_6.png)
+![image](/images/2023/2023-04-08/capture_6.png)
 
 
 
@@ -163,7 +163,7 @@ public class Platform : MonoBehaviour
 
 Player 오브젝트를 선택하고 Tag를 Player로 바꿔줍니다.
 
-![image](/images/2023-04-08/capture_7.png)
+![image](/images/2023/2023-04-08/capture_7.png)
 
 
 게임을 실행해서 플레이어가 지나간 뒤 블럭이 떨어지는지,

@@ -20,7 +20,7 @@ Canvas에서 UI->Text를 생성해주고 이름을 Main 으로 바꿉니다.
 
 그 다음 아래와 같이 설정해줍니다.
 
-![image](/images/2023-05-08/capture_a.png)
+![image](/images/2023/2023-05-08/capture_a.png)
 
 
 
@@ -30,7 +30,7 @@ Text를 하나 더 만들어 이름을 mainText로 바꾸고 Main의 자식으�
 
 마찬가지로 아래와 같이 설정해줍니다.
 
-![image](/images/2023-05-08/capture_b.png)
+![image](/images/2023/2023-05-08/capture_b.png)
 
 
 
@@ -179,7 +179,7 @@ Hierarchy뷰의 GameManager를 선택하고, MainUI에 Main을, Main Text에 mai
 우선, Canvas에 Text를 하나 추가하고 Retry로 이름을 바꿔줍니다.
 
 
-![image](/images/2023-05-08/capture_c.png)
+![image](/images/2023/2023-05-08/capture_c.png)
 
 
 
@@ -333,7 +333,7 @@ Main Camera를 선택하고 Audio Source를 추가합니다.
 
 AudioClip부분에 원하는 mp3 파일을 넣습니다.
 
-![image](/images/2023-05-08/capture_d.png)
+![image](/images/2023/2023-05-08/capture_d.png)
 
 
 

@@ -58,7 +58,7 @@ void LateUpdate()
 
 - 더블클릭해보면 애니메이터 창을 확인할 수 있습니다. 
 
-![image](/images/2023-08-21/capture_1.png)
+![image](/images/2023/2023-08-21/capture_1.png)
 
 
 
@@ -69,7 +69,7 @@ void LateUpdate()
 - Dead는 Stand, Run 상태와 상관없이 바뀔 수 있으므로, AnyState와 이어줍니다.
 
 
-![image](/images/2023-08-21/capture_2.png)
+![image](/images/2023/2023-08-21/capture_2.png)
 
 
 - 이제 특정 조건이 되었을 때 애니메이션이 바뀌도록 하기위하여 Parameters를 추가합니다.
@@ -83,7 +83,7 @@ void LateUpdate()
 
 - Run -> Stand 도 마찬가지로 Conditions 부분만 Less로, 나머지는 똑같이 설정해주고, Dead 애니메이션에는 Dead 컨디션을 설정해줍니다.
 
-![image](/images/2023-08-21/capture_3.png)
+![image](/images/2023/2023-08-21/capture_3.png)
 
 - 마지막으로 애니메이션 설정을 위한 코드작성을 해줍니다.
 
@@ -156,7 +156,7 @@ public class Player : MonoBehaviour
 
 - 먼저, Player1, Player2, Player3 에 대한 애니메이션을 Player 오브젝트에 붙여 넣어 만들어 줍니다.
 
-![image](/images/2023-08-21/capture_4.png)
+![image](/images/2023/2023-08-21/capture_4.png)
 
 - Player 오브젝트를 눌러 Animator를 보면 추가한 다른 애니메이션들이 있을텐데, Delete를 눌러 없애줍니다.
 
@@ -165,14 +165,14 @@ public class Player : MonoBehaviour
 - 이름은 AcPlayer1으로 하고(폴더안에서 파일이 앞쪽에 위치하도록 하기위해) 인스펙터창의 Controller 부분에 Player Animator Controller를 붙여넣어 줍니다. 그다음 밑에서 오버라이드할 애니메이션을 선택해주면 끝입니다.
 
 
-![image](/images/2023-08-21/capture_5.png)
+![image](/images/2023/2023-08-21/capture_5.png)
 
 
 - 사용하는 방법은, Player 오브젝트를 복사 붙여넣기하여 새로운 오브젝트를 생성해준 뒤, Animator 부분의 Controller에 붙여넣어주기만 하면 됩니다.
 
-![image](/images/2023-08-21/capture_6.png)
+![image](/images/2023/2023-08-21/capture_6.png)
 
 
 - 이제 게임을 실행해보면,
 
-![image](/images/2023-08-21/capture_7.gif)
+![image](/images/2023/2023-08-21/capture_7.gif)

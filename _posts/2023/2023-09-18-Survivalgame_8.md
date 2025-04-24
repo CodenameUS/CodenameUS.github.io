@@ -27,7 +27,7 @@ sidebar:
 
 - 이 폴더로, Hierarchy 뷰에있는 몬스터 오브젝트를 끌어다 놓게되면 프리팹이 생성됩니다.
 
-![image](/images/2023-09-18/capture_1.png)
+![image](/images/2023/2023-09-18/capture_1.png)
 
 
 - 이제 Hierarchy 뷰에있는 몬스터 오브젝트들을 전부 삭제해주고, Create Empty - "PoolManager" 라는 이름의 오브젝트를 만들어줍니다.
@@ -109,7 +109,7 @@ public class PoolManager : MonoBehaviour
 
 - 이 스크립트를 PoolManager에 붙여넣고, Prefabs 폴더에 있는 프리팹들을 연결시켜줍니다.
 
-![image](/images/2023-09-18/capture_2.png)
+![image](/images/2023/2023-09-18/capture_2.png)
 
 
 ### Spawner.cs
@@ -141,12 +141,12 @@ public class Spawner : MonoBehaviour
 
 1. 먼저, GameObject.cs 에서 PoolManager를 다른곳에서 접근할 수 있도록 추가합니다.
 
-![image](/images/2023-09-18/capture_3.png)
+![image](/images/2023/2023-09-18/capture_3.png)
 
 
 2. 플레이어가 Jump키(Space바)를 누르면 PoolManager의 Get함수를 불러와 몬스터를 Scene에 생성하게됩니다.
 
-![image](/images/2023-09-18/capture_4.gif)
+![image](/images/2023/2023-09-18/capture_4.gif)
 
 - 하지만 이렇게만 하면 Jump키를 누를때마다 오류가 발생합니다.
 
@@ -184,7 +184,7 @@ public class Spawner : MonoBehaviour
 - 카메라 바깥쪽에서 몬스터가 생성되어 플레이어쪽으로 다가오는게 자연스러울테니, 아래와같이 스폰 위치를 잡아줍니다.
 
 
-![image](/images/2023-09-18/capture_5.png)
+![image](/images/2023/2023-09-18/capture_5.png)
 
 
 ```c#
@@ -230,4 +230,4 @@ public class Spawner : MonoBehaviour
 
 - Spawn() 함수에서는 스폰될 몬스터의 종류(현재는 2가지를 추가하였음)를 랜덤으로설정, 몬스터의 위치도 랜덤(아까 설정한 Point들 중 하나)하게 나오도록 설정했습니다.
 
-![image](/images/2023-09-18/capture_6.gif)
+![image](/images/2023/2023-09-18/capture_6.gif)

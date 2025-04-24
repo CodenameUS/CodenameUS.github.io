@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
 
 File -> Build Settings -> InfiniteZigzag 씬을 추가합니다.
 
-![image](/images/2023-05-08/capture_1.png)
+![image](/images/2023/2023-05-08/capture_1.png)
 
 
 
@@ -107,7 +107,7 @@ Window -> Rendering -> Lighting 에 들어갑니다.
 Generating Lighting을 눌러 라이트맵을 생성합니다.
 
 
-![image](/images/2023-05-08/capture_2.png)
+![image](/images/2023/2023-05-08/capture_2.png)
 
 
 
@@ -115,7 +115,7 @@ Generating Lighting을 눌러 라이트맵을 생성합니다.
 라이트맵이 생성되었는지 확인합니다.
 
 
-![image](/images/2023-05-08/capture_3.png)
+![image](/images/2023/2023-05-08/capture_3.png)
 
 
 

@@ -15,7 +15,7 @@ sidebar:
 - 자연스러운 카메라 움직임을 더하기 위하여 카메라설정을 다듬어보겠습니다.
 - 먼저 Main Camera를 선택하고, Pixel Perfect Camera 컴포넌트를 추가합니다.
 
-![image](/images/2023-11-13/capture_3.png)
+![image](/images/2023/2023-11-13/capture_3.png)
 
 - 그리고 Window - Package Manager 를 선택하여 Cinemachine 패키지를 인스톨합니다.
 - 이제 Hierarchy 뷰에서 Cinemachine 를 추가할 수 있는데, Virtual Camera를 추가하고 이름도 바꿔줍니다.
@@ -33,13 +33,13 @@ sidebar:
 - 간단하게 Text를 게임화면에 나타내보겠습니다. Canvas 아래에 UI -> Legacy -> Text를 추가합니다.
 
 
-![image](/images/2023-11-13/capture_1.png)
+![image](/images/2023/2023-11-13/capture_1.png)
 
-![image](/images/2023-11-13/capture_2.png)
+![image](/images/2023/2023-11-13/capture_2.png)
 
 - 다시 Canvas 인스펙터창에 보면 Canvas Scaler 컴포넌트가 있는걸 볼 수 있습니다. 이는 해상도를 조절하는것으로 기본적으로 고정픽셀로 설정되어있습니다. 하지만 이설정값은 사용자의 화면 해상도에따라 UI 크기가 다르게 보여지게되므로 Scale With Screen Size를 선택하여 화면크기에따라 UI크기도 달라지게 설정합니다.
 
-![image](/images/2023-11-13/capture_4.png)
+![image](/images/2023/2023-11-13/capture_4.png)
 
 - 이제 Canvas 세팅은 완료되었습니다. Text를 지워주고 스크립트를 작성할준비를 합니다.
 
@@ -100,7 +100,7 @@ public class HUD : MonoBehaviour
 - Canvas - UI - Slider를 추가합니다.
 - 먼저 Anchor 설정을 합니다. Anchor는 화면상의 배치를 도와주는 것으로 Shift를 누르면 기준점을, Alt를 누르면 너비를 확인할 수 있습니다. Shift + Alt 를 눌러 이 게임에 맞는 위치를 선택해줍니다.
 
-![image](/images/2023-11-13/capture_5.png)
+![image](/images/2023/2023-11-13/capture_5.png)
 
 
 - Interactable 체크해제 -> 사용자가 임의로 수정할 수 없도록
@@ -109,14 +109,14 @@ public class HUD : MonoBehaviour
 - Handle Rect - Delete 하여 삭제
 - Value -> 게이지가 차오르는 정도
 
-![image](/images/2023-11-13/capture_6.png)
+![image](/images/2023/2023-11-13/capture_6.png)
 
 
 - 설정 후 Slider 아래의 Handle 오브젝트를 삭제합니다.
 - BackGround를 선택하고 Anchor를 최대로, Source Image에 Sprite 폴더의 Back0을 지정합니다.
 - Fill Area 아래의 Fill 를 선택하고, Left와 Right를 0으로, Source Image를 Sprite 폴더의 Front0 으로 지정합니다.
 
-![image](/images/2023-11-13/capture_7.png)
+![image](/images/2023/2023-11-13/capture_7.png)
 
 ### HUD.cs 수정
 

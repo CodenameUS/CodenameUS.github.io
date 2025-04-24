@@ -27,13 +27,13 @@ sidebar:
 
 - CapsuleCollider 2D를 추가하여, 몬스터 오브젝트의 사이즈에 맞게 조절해 줍니다.
 
-![image](/images/2023-08-28/capture_1.png)
+![image](/images/2023/2023-08-28/capture_1.png)
 
 
 - 만들어진 Enemy 오브젝트를 Ctrl + D 하여 여러종류의 Enemy들도 함께 추가해봅니다. 이때 Sprite Renderer의 Sprite와 Animator의 컨트롤러는 해당 Enemy에 맞는것을 집어넣어주어야합니다.
 
 
-![image](/images/2023-08-28/capture_2.gif)
+![image](/images/2023/2023-08-28/capture_2.gif)
 
 - 만약 플레이어가 넘어지는 현상이 발생한다면 Player 오브젝트의 Freeze Rotation을 체크해주어야합니다.
 
@@ -168,4 +168,4 @@ public class Reposition : MonoBehaviour
 
 - 원활한 테스트를 위하여 Enemy 오브젝트를 Ctrl + D 키를 사용하여 많이 복사해서 게임을 실행해봅니다.
 
-![image](/images/2023-08-28/capture_3.gif)
+![image](/images/2023/2023-08-28/capture_3.gif)

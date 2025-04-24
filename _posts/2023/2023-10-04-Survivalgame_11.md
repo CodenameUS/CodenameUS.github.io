@@ -73,7 +73,7 @@ public class Scanner : MonoBehaviour
 - Scanner 부분의 targetLayer와 scanRange를 설정해주고 게임을 실행해봅니다.
 - nearestTarget이 플레이어와 가장 가까운 Enemy로 설정되는것을 볼 수 있습니다.
 
-![image](/images/2023-10-04/capture_1.png)
+![image](/images/2023/2023-10-04/capture_1.png)
 
 
 ## 새로운 무기 추가
@@ -84,7 +84,7 @@ public class Scanner : MonoBehaviour
 - Scene에서 한번 보면, BoxCollider가 오브젝트 사이즈에 맞지않을 수 있는데, BoxCollider 컴포넌트를 삭제하거나 사이즈를 맞춰줍니다.
 - 그런다음 Bullet1를 프리팹 폴더에 갖다 놓습니다. 이렇게하면 쉽게 기존의것을 재사용하여 무기를 만들수있습니다.
 
-![image](/images/2023-10-04/capture_2.png)
+![image](/images/2023/2023-10-04/capture_2.png)
 
 
 ## 총탄 생성하기
@@ -93,9 +93,9 @@ public class Scanner : MonoBehaviour
 2. Weapon 스크립트의 속성을 바꿔줍니다.
 3. PoolManager에서 Element를 추가하여 Bullet1를 추가합니다.
 
-![image](/images/2023-10-04/capture_3.png)
+![image](/images/2023/2023-10-04/capture_3.png)
 
-![image](/images/2023-10-04/capture_4.png)
+![image](/images/2023/2023-10-04/capture_4.png)
 
 
 ### Weapon.cs 수정
@@ -432,4 +432,4 @@ public class Weapon : MonoBehaviour
 
 ## 테스트
 
-![image](/images/2023-10-04/capture_5.gif)
+![image](/images/2023/2023-10-04/capture_5.gif)

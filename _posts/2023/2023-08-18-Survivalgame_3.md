@@ -14,7 +14,7 @@ sidebar:
 
 - Scripts 폴더를 하나 생성하고, C# 스크립트(Player)를 하나 생성합니다.
 
-![image](/images/2023-08-18/capture_1.png)
+![image](/images/2023/2023-08-18/capture_1.png)
 
 - Player.cs 스크립트를 Player 오브젝트에 붙여줍니다.
 
@@ -76,4 +76,4 @@ public class Player : MonoBehaviour
 
 
 
-![image](/images/2023-08-18/capture_2.gif)
+![image](/images/2023/2023-08-18/capture_2.gif)

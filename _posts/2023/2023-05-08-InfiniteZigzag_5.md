@@ -23,7 +23,7 @@ Canvas를 선택하고, UI Scale Mode -> Scale With Screen Size
 
 Refrece Resolution 1080 1920, Match 0.5로 설정해줍니다.
 
-![image](/images/2023-05-08/capture_4.png)
+![image](/images/2023/2023-05-08/capture_4.png)
 
 
 
@@ -32,13 +32,13 @@ Canvas의 자식으로 있는 Text의 이름을 Score로 바꾸고 Score를 선�
 
 Center를 클릭한 다음 아래 처럼 top 중앙에 오도록 합니다.
 
-![image](/images/2023-05-08/capture_5.png)
+![image](/images/2023/2023-05-08/capture_5.png)
 
 
 
 그리고 Canvas에 Create Empty하여 GameObject를 생성한 뒤 이름을 GameUI로 바꾸고 Score를 자식으로 놓습니다.
 
-![image](/images/2023-05-08/capture_6.png)
+![image](/images/2023/2023-05-08/capture_6.png)
 
 
 GameManager 스크립트를 수정합니다.

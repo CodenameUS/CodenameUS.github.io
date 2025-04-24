@@ -124,7 +124,7 @@ public class SpawnData
 - Update 함수에 보면 level 이라는 변수에 게임시간에 따른 레벨을 부여하여 일정 시간이상이 지나면 Spawn함수에서 level에 따른 
 몬스터를 소환하도록 만들어줬습니다.
 
-![image](/images/2023-10-02/capture_1.png)
+![image](/images/2023/2023-10-02/capture_1.png)
 
 - 인스펙터창의 Spawner를 보게되면 이런식으로 속성값을 따로 코딩없이 넣을 수 있게된것을 볼 수 있습니다.[데이터는 현재 임시로 집어넣음]
 
@@ -133,7 +133,7 @@ public class SpawnData
 
 - 프리팹 폴더에 있는 몬스터 프리팹을 하나만 남기고 지워버리겠습니다.
 
-![image](/images/2023-10-02/capture_2.png)
+![image](/images/2023/2023-10-02/capture_2.png)
 
 - Speed를 0으로 해줍니다.
 
@@ -210,7 +210,7 @@ public class Enemy : MonoBehaviour
 
 - 몬스터의 최대체력, 현재체력을 담을 변수도 함께 추가합니다.
 
-![image](/images/2023-10-02/capture_3.png)
+![image](/images/2023/2023-10-02/capture_3.png)
 
 - 몬스터 스크립트에 애니메이션 컨트롤러 부분이 생긴것을 볼 수 있습니다. 여기에서 몬스터 종류를 추가하면 됩니다.
 
@@ -218,4 +218,4 @@ public class Enemy : MonoBehaviour
 
 
 
-![image](/images/2023-10-02/capture_4.gif)
+![image](/images/2023/2023-10-02/capture_4.gif)

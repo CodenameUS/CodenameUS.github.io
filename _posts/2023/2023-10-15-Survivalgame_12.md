@@ -211,9 +211,9 @@ public class GameManager : MonoBehaviour
 - 스크립트를 작성하고, 몬스터의 Dead애니메이션을 더블클릭합니다.
 - 다음과 같이 1초의 텀을 두고 애니메이션이 동작하도록 설정합니다.
 
-![image](/images/2023-10-15/capture_1.png)
+![image](/images/2023/2023-10-15/capture_1.png)
 
 - 그런다음, 왼쪽 상단의 Add event 버튼을 눌러 애니메이션 이벤트를 추가합니다.
 - 이제 애니메이션창을 띄워둔 채로 몬스터 프리팹을 더블클릭하고 Hierarchy 뷰의 Enemy를 선택하면 이벤트 함수를 선택할 수 있는 창이 인스펙터창에 보이게됩니다. 여기에서 Dead() 함수를 선택해줍니다.
 
-![image](/images/2023-10-15/capture_2.png)
+![image](/images/2023/2023-10-15/capture_2.png)

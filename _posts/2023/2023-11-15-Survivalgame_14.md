@@ -18,7 +18,7 @@ sidebar:
 - Canvas 아래에 UI-Legacy-Text 를 추가해줍니다.
 - 이름을 Level로 바꾸고 Anchor를 화면 상단의오른쪽에 맞춰줍니다.(Alt+Shift)
 
-![image](/images/2023-11-15/capture_1.png)
+![image](/images/2023/2023-11-15/capture_1.png)
 
 - 그리고 다음과 같이 설정해줍니다. Text가 너무 게임화면끝에 붙어있어서 X,Y 포지션을 약간씩 여유를 주었고, 글배치를 오른쪽정렬로 바꿨습니다.
 - 폰트는 프로젝트의 Font 파일에 무료 폰트가 있으므로 게임에 맞는 폰트로 바꿔줍니다.
@@ -32,13 +32,13 @@ sidebar:
 - 이미지가 매우크게 나올텐데, Image 인스펙터창에 보면 Set Native Size라는 버튼이있습니다. 눌러서 이미지의 원래크기로 만들어줍니다.
 - Anchor는 좌측 상단으로 잡았습니다.
 
-![image](/images/2023-11-15/capture_2.png)
+![image](/images/2023/2023-11-15/capture_2.png)
 
 
 - 이제 텍스트를 넣어주기위하여 아까 만들어둔 Level UI를 Ctrl+D 하여 복사한 뒤 Kill UI 아래에 넣어줍니다. 이름은 Kill Text로 했습니다.
 - Anchor는 좌측중앙으로 잡았고, 여유는 아래처럼 주었습니다.
 
-![image](/images/2023-11-15/capture_3.png)
+![image](/images/2023/2023-11-15/capture_3.png)
 
 
 ### HUD.cs
@@ -97,7 +97,7 @@ public class HUD : MonoBehaviour
 - Level UI를 Ctrl+D 하여 복사합니다. 이름은 Timer로 바꾸었습니다.
 - Anchor는 위쪽중앙에 위치하도록 하였습니다.
 
-![image](/images/2023-11-15/capture_4.png)
+![image](/images/2023/2023-11-15/capture_4.png)
 
 - 그 다음, HUD.cs에 다음 내용을 추가합니다.
 
@@ -229,4 +229,4 @@ public class Follow : MonoBehaviour
 
 - 체력바의 슬라이더에 Follow.cs를 붙여줍니다. Follow.cs는 슬라이더 위치를 플레이어 위치를 따라다니게 해줍니다.
 
-![image](/images/2023-11-15/capture_5.gif)
+![image](/images/2023/2023-11-15/capture_5.gif)

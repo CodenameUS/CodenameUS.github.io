@@ -30,20 +30,20 @@ sidebar:
 
 - 패키지 인스톨이 완료되면, Hierarchy 뷰의 Player 오브젝트를 선택하고, Player Input 컴포넌트를 추가해줍니다.
 
-![image](/images/2023-08-19/capture_1.png)
+![image](/images/2023/2023-08-19/capture_1.png)
 
 - Create Actions... 를 눌러, Undead Survivor 폴더 안에 Player 이름의 프로필 에셋을 생성합니다.
 
-![image](/images/2023-08-19/capture_2.png)
+![image](/images/2023/2023-08-19/capture_2.png)
 
 - Move를 열어보면, 키보드 WASD, 조이스틱, 게임패드 등 여러 디바이스들의 인풋을 받을수 있도록 되어있는것을 확인할 수 있습니다.
 
-![image](/images/2023-08-19/capture_3.png)
+![image](/images/2023/2023-08-19/capture_3.png)
 
 
 - 그리고, 오른쪽에서 반환 타입, 인터랙션, 프로세서등을 설정할 수 있습니다. 그중에서 프로세서의 Normalize Vector 2 를 추가합니다.
 
-![image](/images/2023-08-19/capture_4.png)
+![image](/images/2023/2023-08-19/capture_4.png)
 
 
 ## Player.cs 스크립트 변경
@@ -52,7 +52,7 @@ sidebar:
 
 - Player Input 컴포넌트에 보면 다음과 같은 함수들을 지원하는것을 볼 수 있습니다.
 
-![image](/images/2023-08-19/capture_5.png)
+![image](/images/2023/2023-08-19/capture_5.png)
 
 
 
@@ -104,4 +104,4 @@ public class Player : MonoBehaviour
 - FixedUpdate() 함수에 nextVec 변수에 inputVec.normalized 되어있던것도 이제 자동으로 정규화가 되면서 필요가 없어졌으므로 지워줍니다.
 
 
-![image](/images/2023-08-19/capture_6.gif)
+![image](/images/2023/2023-08-19/capture_6.gif)

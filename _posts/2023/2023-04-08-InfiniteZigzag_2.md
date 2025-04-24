@@ -17,7 +17,7 @@ Hierarchy View에 CreateEmpty -> PlatformSpawner 를 생성합니다.
 
 Scripts 폴더안에 PlatformSpawner.cs 스크립트를 만들고 PlatformSpawner 오브젝트와 연결해줍니다..
 
-![image](/images/2023-04-08/capture_1.png)
+![image](/images/2023/2023-04-08/capture_1.png)
 
 
 ```c++
@@ -138,7 +138,7 @@ Main Camera의 CameraController 스크립트 빈칸에 Target->Player, SmoothVal
 
 
 
-![image](/images/2023-04-08/capture_2.png)
+![image](/images/2023/2023-04-08/capture_2.png)
 
 
 카메라 시점이 자동차를 따라서 움직이는 것을 확인할 수 있습니다.

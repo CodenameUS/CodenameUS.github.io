@@ -22,7 +22,7 @@ sidebar:
 
 3. "Bullet" 이름으로 스크립트를 만들어 붙여줍니다.
 
-![image](/images/2023-10-03/capture_1.png)
+![image](/images/2023/2023-10-03/capture_1.png)
 
 
 ### Bullet.cs
@@ -57,7 +57,7 @@ public class Bullet : MonoBehaviour
 - 무기 프리팹을 만들어봅니다. 아까 배치해두었던 Bullet 오브젝트를 프리팹 파일로 끌어놓아 프리팹을 생성합니다.
 - 몬스터와의 충돌이벤트를위해 이 프리팹에 BoxCollider2D 컴포넌트를 달아주고 IsTrigger를 체크합니다.
 
-![image](/images/2023-10-03/capture_2.png)
+![image](/images/2023/2023-10-03/capture_2.png)
 
 
 ### Enemy.cs
@@ -105,7 +105,7 @@ public class Bullet : MonoBehaviour
 
 - 플레이어 자식으로 "Weapon 0" 이름의 오브젝트를 생성합니다. "Weapon" 이름으로 스크립트도 하나 생성합니다.
 
-![image](/images/2023-10-03/capture_3.png)
+![image](/images/2023/2023-10-03/capture_3.png)
 
 
 ### Weapon.cs
@@ -222,12 +222,12 @@ public class Weapon : MonoBehaviour
 
 1. Weapon 0 오브젝트에 Weapon 스크립트를 붙이고 값을 설정해주었습니다. (첫번째 웨이브 몬스터가 한번에 죽을정도로설정함)
 
-![image](/images/2023-10-03/capture_4.png)
+![image](/images/2023/2023-10-03/capture_4.png)
 
 2. 풀링을 위해 풀매니저에 불릿을 등록합니다.
 
-![image](/images/2023-10-03/capture_5.png)
+![image](/images/2023/2023-10-03/capture_5.png)
 
 3. 게임을 실행해서 작동되는지 확인합니다.
 
-![image](/images/2023-10-03/capture_6.gif)
+![image](/images/2023/2023-10-03/capture_6.gif)

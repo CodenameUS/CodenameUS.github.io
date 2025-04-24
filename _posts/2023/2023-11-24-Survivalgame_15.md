@@ -57,11 +57,11 @@ public class ItemData : ScriptableObject
 - Data-Create에서 맨위를 보면 Scriptable이라는 새로운 목록이 있습니다. 선택합니다.
 - 아래와 같이 아이템별 정보를 설정할 수 있습니다.
 
-![image](/images/2023-11-24/capture_1.png)
+![image](/images/2023/2023-11-24/capture_1.png)
 
 - 이런 방식으로 Scriptable 오브젝트를 아이템마다 생성합니다.
 
-![image](/images/2023-11-24/capture_2.png)
+![image](/images/2023/2023-11-24/capture_2.png)
 
 
 # 레벨업 버튼 UI 만들기
@@ -71,16 +71,16 @@ public class ItemData : ScriptableObject
 - LevelUp 아래에 Text UI와 Image UI를 붙여 아래처럼 설정했습니다.
 
 
-![image](/images/2023-11-24/capture_3.png)
+![image](/images/2023/2023-11-24/capture_3.png)
 
 
 - 만든 UI를 복사하여 Item 0부터 Item 4까지 각각 설정해줍니다.
 
-![image](/images/2023-11-24/capture_4.png)
+![image](/images/2023/2023-11-24/capture_4.png)
 
 - LevelUp 오브젝트에 AddComponent - Vertical Layout Group를 붙여주게되면 화면상에 세로로 차곡차곡 나타나는것을 볼 수 있습니다.
 
-![image](/images/2023-11-24/capture_5.png)
+![image](/images/2023/2023-11-24/capture_5.png)
 
 
 ## Item.cs
@@ -149,7 +149,7 @@ public class Item : MonoBehaviour
 - UI 버튼들을 클릭했을 때 이벤트를 처리하는 함수로 OnClick 함수를 만들었습니다. 버튼을 누르면 레벨을 한단계 올리고, 최대레벨에 도달했을 경우에 버튼을 비활성화 시켰습니다.
 - 저장한 뒤 Item 0 ~ Item 4 별로 Item 스크립트를 붙이고 Onclick 함수가 동작하도록 설정해줍니다.
 
-![image](/images/2023-11-24/capture_6.png)
+![image](/images/2023/2023-11-24/capture_6.png)
 
 
-![image](/images/2023-11-24/capture_7.gif)
+![image](/images/2023/2023-11-24/capture_7.gif)

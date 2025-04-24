@@ -17,14 +17,14 @@ sidebar:
 게임 내용 : 플레이어가 마우스 클릭을 통해 자동차 좌우방향을 바꿔가며 오래 살아남는것이 목표.
 
 (게임 예시 사진)
-![image](/images/2023-01-11/example.jpg)
+![image](/images/2023/2023-01-11/example.jpg)
 
 
 ## 과정
 
 모바일 환경에서 플레이하는것을 가정하였으므로 유니티 뷰를 1080X1920 으로 맞춰줍니다.
 
-![image](/images/2023-01-11/capture1.png)
+![image](/images/2023/2023-01-11/capture1.png)
 
 
 Scene 이름도 InfiniteZigzag로 바꿔줍니다.
@@ -35,13 +35,13 @@ Scene 이름도 InfiniteZigzag로 바꿔줍니다.
 
 Background Color는 마음대로 지정합니다.
 
-![image](/images/2023-01-11/capture2.png)
+![image](/images/2023/2023-01-11/capture2.png)
 
 
 
 이제 Cube를 하나 생성해봅니다. 카메라(게임뷰)에도 큐브가 생성된것을 확인할 수 있습니다.
 
-![image](/images/2023-01-11/capture3.png)
+![image](/images/2023/2023-01-11/capture3.png)
 
 
 Cube의 이름을 Platform으로 바꾸고 Scale을 4,1,4로 바꿔 바닥을 만들어봅니다.
@@ -56,7 +56,7 @@ GameObject -> Align with view 를 선택하면 Camera 방향이 Game 뷰에 맞�
 
 그러면 대충 이런식으로 구도가 잡히게 됩니다.
 
-![image](/images/2023-01-11/capture4.png)
+![image](/images/2023/2023-01-11/capture4.png)
 
 
 
@@ -68,7 +68,7 @@ GameObject -> Align with view 를 선택하면 Camera 방향이 Game 뷰에 맞�
 
 Position을 Z=3, Scale을 2,1,2로 맞추고 RigidBody를 생성하여 Is Kinematic 체크를 해줍니다.
 
-![image](/images/2023-01-11/capture5.png)
+![image](/images/2023/2023-01-11/capture5.png)
 
 
 
@@ -76,12 +76,12 @@ Position을 Z=3, Scale을 2,1,2로 맞추고 RigidBody를 생성하여 Is Kinema
 
 Prefabs 폴더를 하나 생성한뒤 저장해줍니다.
 
-![image](/images/2023-01-11/capture6.png)
+![image](/images/2023/2023-01-11/capture6.png)
 
 
 PlatformPre를 3개정도 복사붙여넣기 한 뒤 길이 이어지도록 Z위치를 2씩 띄워줍니다.
 
-![image](/images/2023-01-11/capture7.png)
+![image](/images/2023/2023-01-11/capture7.png)
 
 
 
