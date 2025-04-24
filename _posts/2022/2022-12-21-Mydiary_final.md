@@ -36,7 +36,7 @@ sidebar:
 
 Mydiary 앱은 실행 시 메인 화면으로 이동하게 됩니다.
 
-![image](/images/2022-12-21/main.png)
+![image](/images/2022/2022-12-21/main.png)
 
 우측 상단에 연락처로 갈 수 있는 버튼과 우측 하단에 일정을 추가할 수 있는 버튼이 있습니다.
 
@@ -47,7 +47,7 @@ Mydiary 앱은 실행 시 메인 화면으로 이동하게 됩니다.
 
 우선 일정 추가버튼을 누르게되면 일정메인화면으로 이동하게 됩니다.
 
-![image](/images/2022-12-21/diary.png)
+![image](/images/2022/2022-12-21/diary.png)
 
 상단에는 홈으로 갈 수 있는 버튼, 글 쓰기 버튼이 있습니다.
 
@@ -55,24 +55,24 @@ Mydiary 앱은 실행 시 메인 화면으로 이동하게 됩니다.
 
 검색기능은 제목을 입력하여 할 수 있습니다.
 
-![image](/images/2022-12-21/searchDiary.png)
+![image](/images/2022/2022-12-21/searchDiary.png)
 
 
 글 쓰기 버튼을 누르면 글 추가를 할 수 있습니다.
 
-![image](/images/2022-12-21/add.png)
+![image](/images/2022/2022-12-21/add.png)
 
 
 글 목록에서 하나를 선택하면 상세화면으로 넘어가게 되는데 여기서 수정, 삭제가 가능합니다.
 
-![image](/images/2022-12-21/delete.png)
+![image](/images/2022/2022-12-21/delete.png)
 
 
 여기까지가 일정 관련 화면들입니다.
 
 다음으로 연락처 관련 화면들을 보겠습니다.
 
-![image](/images/2022-12-21/phonebook.png)
+![image](/images/2022/2022-12-21/phonebook.png)
 
 
 연락처 화면도 마찬가지로 상단에 홈 버튼, 연락처 추가 버튼이있고 아랫쪽에 연락처 목록이 있습니다.
@@ -81,12 +81,12 @@ Mydiary 앱은 실행 시 메인 화면으로 이동하게 됩니다.
 
 연락처 추가화면입니다.
 
-![image](/images/2022-12-21/addphone.png)
+![image](/images/2022/2022-12-21/addphone.png)
 
 
 그 다음 연락처 목록에서 하나를 선택했을 때 입니다.
 
-![image](/images/2022-12-21/phonedetail.png)
+![image](/images/2022/2022-12-21/phonedetail.png)
 
 
 추가기능으로 전화기 모양 버튼을 누르면 통화를 할 수 있도록 했습니다.
