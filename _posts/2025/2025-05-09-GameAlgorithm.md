@@ -16,6 +16,7 @@ sidebar:
 
 출처 : [게임 알고리즘 총정리](https://m.blog.naver.com/wkdckdgur34/223317734697)
 
+* 문제시 삭제
 
 ## 물리 엔진 알고리즘
 
