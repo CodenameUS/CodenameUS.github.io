@@ -1,8 +1,8 @@
 ---
 layer: single
 title: "디자인패턴 - 싱글톤(Singleton)"
-categories: Unity
-tag: [C#, Unity, Game, Project]
+categories: [Unity, DesignPattern]
+tag: [C#, Unity]
 toc: true
 author_profile: false
 sidebar: 
