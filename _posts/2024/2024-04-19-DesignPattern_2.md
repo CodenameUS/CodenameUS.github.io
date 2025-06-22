@@ -1,8 +1,8 @@
 ---
 layer: single
 title: "게임 개발에 사용되는 디자인패턴(2/2)"
-categories: C#
-tag: [DesignPattern, C#, Unity]
+categories: DesignPattern
+tag: [C#, Unity]
 toc: true
 author_profile: false
 sidebar: 
