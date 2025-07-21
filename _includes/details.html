@@ -1,6 +1,4 @@
 <details>
   <summary>{{ summary | markdownify | remove: '<p>' | remove: '</p>' }}</summary>
-  <div>
-    {{ details }}
-  </div>
+  {{ details | markdownify }}
 </details>
